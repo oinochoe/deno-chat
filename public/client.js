@@ -16,7 +16,7 @@ function onConnectionOpen() {
         groupName: queryParams.group,
         name: queryParams.name,
     };
-    ws.send(event);
+    ws.send(JSON.stringify(event));
 }
 
 function onMessageReceived(message) {
