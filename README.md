@@ -1,20 +1,19 @@
 # Real-time Chat App with Deno and Websockets
 
-## Demo
+### macos로 deno를 먼저 설치한다 curl -fsSL https://deno.land/x/install/install.sh | sh
 
-#### Check [the following link](https://deno-websocket-chat.herokuapp.com/chat.html) to see deployed version on heroku
+### zsh를 사용하고 있어서 다음 명령어가 필요함..
 
---------------------
+```
+vi ~/.zshrc
+해당 내용을 추가해줘야함..
+export DENO_INSTALL="/Users/username/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
-## Installation
-You need to have [Deno installed](https://deno.land/#installation) in order to run this app locally
+그리고
+source ~/.zshrc
+```
 
-1. Clone the repository
-2. Go to the project root using terminal
-3. Run `deno run --allow-net --allow-read server.js`
-4. Open http://localhost:3000/chat.html` in browser
-5. That's all.
-
-
-> The project was created along with Youtube Video ["Build Realtime Chat App with Deno and WebSockets"](https://youtu.be/XWyUtYL6ynE). 
-> I appreaciate if you like the video and share it.
+```
+deno command executed
+```
