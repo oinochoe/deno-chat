@@ -51,10 +51,6 @@ export default async function chat(ws) {
                 groupsMap.set(event.groupName, users);
 
                 emitEvent(event.groupName);
-                break;
-
-            default:
-                break;
         }
     }
 }
