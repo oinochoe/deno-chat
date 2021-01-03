@@ -17,3 +17,8 @@ source ~/.zshrc
 ```
 deno command executed
 ```
+
+```
+ 서버 구동
+ deno run --allow-net server.js
+```
